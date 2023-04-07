@@ -111,6 +111,10 @@ body {
     width: 100%;
     cursor: pointer;
   }
+
+  .menu li:hover {
+    background-color: rgb(253, 77, 46)
+  }
   
   .menu a {
     color: white;
@@ -178,12 +182,12 @@ body {
   }
 
   .image1 {
-    width: 180%;
-    margin-top: 80px;
+    width: 180%;    
     transform: translate(-20%, 0);
   }
 
   .section2 {
+    
     position: relative;
     margin-bottom: 80px;
   }
@@ -284,7 +288,8 @@ body {
     text-align: center;
     padding-top: 10px;
     font-size: 36px;
-    margin-top: 60px;
+    margin-top: 160px;
+    border-top: rgb(253, 77, 46) solid 4px ;
   }
 
   .section3 {
@@ -295,9 +300,9 @@ body {
     align-items: center;
     background-color: rgb(238, 238, 238);
     color: black;
-    margin-bottom: 13px;
+    
     padding-bottom: 10px;
-    border-bottom: rgb(253, 77, 46) solid 10px ;
+    
   }
 
   .icon {
@@ -316,68 +321,9 @@ body {
   .podsection3:hover {
     cursor: pointer;
     background-color: rgb(221, 221, 221);
+    border-bottom: rgb(253, 77, 46) solid 4px ;
   }
-
-
-  .blogheading {
-    margin-top: 120px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  #slider {
-    overflow: hidden;
-    height: 200px;
-    margin-bottom: 80px;
-  }
-
-  @keyframes slider {
-    0% {
-      left: 0;
-    }
-
-    30% {
-      left: 0;
-    }
-
-    33% {
-      left: -100%;
-    }
-
-    63% {
-      left: -100%;
-    }
-
-    66% {
-      left: -200%;
-    }
-
-    95% {
-      left: -200%;
-    }
-
-    100% {
-      left: 0;
-    }
-  }  
-
-  #slider figure {
-    width: 300%;
-    position: relative;
-    animation: 9s slider infinite;
-    bottom: 100px;
-  }
-
-  #slider figure:hover {
-    animation-play-state: paused;
-  }
-
-  #slider figure img {
-    width: 33.333333333%;
-    height: 100%;
-    float: left;
-  }
+  
 
   footer p {
     background-color: white;
@@ -404,12 +350,15 @@ body {
     background-color: rgb(253, 77, 46) ;
     display: flex;
     align-items: end;
+    
   }
 
-  footer section p {
+  footer section div {
     padding-bottom: 10px;
+    padding-left: 10px;
     font-weight: 100;
     font-size: 14px;
+    
   }
 
   
