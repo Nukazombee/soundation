@@ -12,10 +12,339 @@ body {
 }
 
 
+@media (min-width: 320px) {
+
+
+  header {
+    background-color: #333;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;    
+  }
+
+  #on {
+    color: rgb(253, 77, 46) ;
+  }
+
+  #logo {
+    width: 21px;
+    height: 21px;
+    transform: translateY(2px);
+    background-color: rgb(253, 77, 46) ;
+    display: inline-block;
+    
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-icon span:nth-child(1) {
+    top: 0;
+  }
+  
+  .menu-icon span:nth-child(2) {
+    top: 50%;
+    background-color: rgb(253, 77, 46) ;
+    transform: translateY(-50%);
+  }
+  
+  .menu-icon span:nth-child(3) {
+    bottom: 0;
+  }
+  
+  #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+    transform: translateY(13px)  rotate(45deg) scaleX(1.2);
+  }
+  
+  #menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+    transform: translateY(-13px)  rotate(-45deg) scaleX(1.2);
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;    
+    width: 90%;
+    border-bottom:rgb(253, 77, 46) solid 8px ;
+  }
+  
+  .menu li {
+    border: black solid 2px;
+    background-color:#333; 
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .menu li:hover {
+    background-color: rgb(253, 77, 46)
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    display: block;
+    top: 50px;
+    left: 10px;
+    z-index: 10;
+  }
 
 
 
-@media (max-width: 500px) {
+  .section1 {
+    display: flex;
+    border: yellow solid 2px;
+    flex-direction: column;
+    margin: 10px auto 10px;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .section1div1 {
+    width: 80%;
+    order: 2;    
+    margin-top: 20px;
+  }
+
+  .pretitle {
+    font-size: 0.8rem;
+  }
+
+  .heading2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .description1 {
+    font-weight: 300;
+  }
+
+  .headphone1div {
+    width: 100%;
+
+    border: grey solid 2px;
+  }
+
+  .headphones1 {
+    width: 160%;
+    transform: translate(-100px, 0);
+  }
+
+
+
+
+  .image1 {
+    width: 180%;    
+    transform: translate(-20%, 0);
+  }
+
+  .section2 {    
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .overtext1 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 34px;
+    font-weight: 800;
+    
+  }
+
+  .overtext2 {
+    background-color: rgba(32, 32, 32, 0.649);
+    padding: 0px 10px 0px 10px;
+    position: absolute;
+    top: 59%;
+    left: 10%;
+    font-size: 34px;
+    
+  }
+
+
+
+  .woofersection {
+    position: relative;
+    padding-bottom: 280px;
+    margin-top: 60px;
+  }
+
+  .wooferimg {
+    height: 360px;
+    transform: translate(-10%, 0);
+  }
+
+  .woofertext1 {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Teko', sans-serif;
+  }
+
+  .woofertext1::after {
+    content: "\2122";
+    font-size: 30px;
+    vertical-align: top;
+  }
+
+  .woofertext2 {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55%;
+    text-align: center;
+  }
+
+  .wooferbutton {
+    position: absolute;
+    height: 30px;
+    width: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 9%;
+    border-radius: 20px;
+    border: none;
+    font-weight: 800;
+  }
+
+  .wooferbutton:hover {
+    background-color: rgb(253, 77, 46);
+    cursor: pointer;
+    color: white;
+  }
+
+  .whyus {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 26px;
+    margin-top: 160px;
+    border-top: rgb(253, 77, 46) solid 4px ;
+  }
+
+  .section3 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    
+    padding-bottom: 10px;
+    
+  }
+
+  .icon {
+    width: 50px;
+  }
+
+  .podsection3 {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+  }
+
+  .podsection3:hover {
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+    border-bottom: rgb(253, 77, 46) solid 4px ;
+  }
+  
+
+  footer p {
+    background-color: white;
+    color: black;
+    height: 70px;   
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: 800;
+    transform: translateY(0);
+    
+  }
+
+  footer div:hover p{
+   
+    
+    cursor: pointer;
+    border-left: rgb(253, 77, 46) solid 4px ;
+  }
+
+  footer section {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: end;
+    
+  }
+
+  footer section div {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+    font-size: 14px;
+    
+  }
+
+  
+ 
+  
+  
+}
+
+
+
+@media (min-width: 500px) {
 
 
   header {
