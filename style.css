@@ -162,7 +162,7 @@ body {
   .headphone1div {
     width: 100%;
     height: 320px;
-    border: grey solid 2px;
+   
   }
 
   .headphones1 {
@@ -538,7 +538,7 @@ body {
   .headphone1div {
     width: 50%;
     height: 510px;
-    border: grey solid 2px;
+   
   }
 
   .headphones1 {
@@ -917,7 +917,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     text-align: right;
-    border: rgb(0, 204, 255) solid 2px;
+    
     position: absolute;
     z-index: 2;
   }
@@ -953,7 +953,7 @@ body {
   
   .headphone1div {
     width: 53%;
-    border: grey solid 2px;
+   
   }
 
   .headphones1 {
@@ -1292,7 +1292,7 @@ body {
 
   .section1 {
     position: relative;
-    border: blue solid 2px;
+    
     
     margin: 10px 10px 10px;
     
@@ -1306,7 +1306,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     text-align: right;
-    border: rgb(0, 204, 255) solid 2px;
+    
     position: absolute;
     z-index: 2;
   }
@@ -1327,7 +1327,7 @@ body {
   .headphone1div {
     height: 600px;
     width: 53%;
-    border: grey solid 2px;
+   
   }
 
   .headphones1 {
@@ -1651,7 +1651,7 @@ body {
 
   .section1 {
     position: relative;
-    border: blue solid 2px;
+    
     
     margin: 10px 10px 10px;
     
@@ -1665,7 +1665,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     text-align: right;
-    border: rgb(0, 204, 255) solid 2px;
+    
     position: absolute;
     z-index: 2;
   }
@@ -1686,7 +1686,7 @@ body {
   .headphone1div {
     width: 53%;
     height: 700px;
-    border: grey solid 2px;
+   
   }
 
   .headphones1 {
@@ -2001,7 +2001,7 @@ body {
 
   .section1 {
     position: relative;
-    border: orange solid 2px;
+    
     
     margin: 10px 10px 10px;
     
@@ -2014,7 +2014,7 @@ body {
     right: 200px;
     top: 23%;
     text-align: right;
-    border: rgb(0, 204, 255) solid 2px;
+    
     position: absolute;
     z-index: 2;
   }
@@ -2036,7 +2036,7 @@ body {
   .headphone1div {
     width: 53%;
     height: 800px;
-    border: grey solid 2px;
+   
   }
 
   .headphones1 {
