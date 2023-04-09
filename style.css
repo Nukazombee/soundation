@@ -15,6 +15,10 @@ body {
 @media (min-width: 320px) {
 
 
+  .bignav {
+    display: none;
+  }
+
   header {
     background-color: #333;
     color: white;
@@ -1067,6 +1071,31 @@ body {
 @media (min-width: 1024px) {
 
 
+  .bignav {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .bignav p:nth-child(1) {
+    color: rgb(253, 77, 46);
+  }
+
+  .bignav p {
+    margin: 0 10px; 
+    border-bottom: transparent solid 1px;
+    transition: border-bottom 0.2s ease-in-out;   
+  }
+
+  .bignav p:hover {
+    cursor: pointer;
+    border-bottom: rgb(253, 77, 46) solid 10px ;
+    transition: border-bottom 0.2s ease-in-out;
+  }
+
   header {
     background-color: #333;
     color: white;
@@ -1078,8 +1107,8 @@ body {
   }
   
   nav {
-    display: flex;
-    align-items: center;    
+    display: none;
+       
   }
 
   #on {
@@ -1435,8 +1464,8 @@ body {
   }
   
   nav {
-    display: flex;
-    align-items: center;    
+    display: none;
+       
   }
 
   #on {
@@ -1783,8 +1812,8 @@ body {
   }
   
   nav {
-    display: flex;
-    align-items: center;    
+    display: none;
+       
   }
 
   #on {
