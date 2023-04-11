@@ -14,6 +14,9 @@ body {
 
 @media (min-width: 320px) {
 
+  .row {
+    display: none;
+  }
 
   .bignav {
     display: none;
@@ -181,7 +184,10 @@ body {
     padding: 4px 8px;
     border-radius: 5px;
     width: 200px;
+    transition: background-color 0.5s ease-in-out;
   }
+
+  
 
   .colorbar:hover {
     cursor: pointer;
@@ -226,23 +232,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;    
+    height: 11vh;    
     margin-top: 50px;
   }
 
   .buttonShopAll {
-    height: 100%;
+    height: 50%;
     width: 300px;
-    border: white solid 3px;
+    border-top: 4px solid #858585; /* sets the light grey top border */
+    border-left: 4px solid #6e6e6e; /* sets the light grey left border */
+    border-right: 4px solid #1b1b1b; /* sets the dark grey right border */
+    border-bottom: 4px solid #202020; /* sets the dark grey bottom border */
     border-radius: 10px;
     background-color: #333;
-    color: white;
-    font-size: 3vw;
+    color: rgb(236, 236, 236);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
   }
 
   .buttonShopAll:hover {
     cursor: pointer;
-    border: rgb(253, 77, 46) solid 4px;
+    background-color: rgb(75, 75, 75);    
+    transition: background-color 0.1s ease-in-out;    
   }
 
   .image1 {
@@ -339,7 +351,7 @@ body {
     padding-top: 10px;
     font-size: 26px;
     margin-top: 60px;
-    border-top: rgb(253, 77, 46) solid 4px ;
+    
   }
 
   .section3 {
@@ -709,7 +721,7 @@ body {
     padding-top: 10px;
     font-size: 36px;
     margin-top: 60px;
-    border-top: rgb(253, 77, 46) solid 4px ;
+   
   }
 
   .section3 {
@@ -914,7 +926,7 @@ body {
     order: 2;
     width: 35%;
     right: 20px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     text-align: right;
     
@@ -929,7 +941,7 @@ body {
     font-weight: 700; 
     position: absolute; 
     right: 30px;
-    top: 70%;  
+    top: 50%;  
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -937,6 +949,8 @@ body {
     border-radius: 5px;
     width: 200px;
   }
+
+  
 
   .pretitle {
     font-size: 0.8rem;
@@ -1074,7 +1088,7 @@ body {
     padding-top: 10px;
     font-size: 36px;
     margin-top: 50px;
-    border-top: rgb(253, 77, 46) solid 4px ;
+    
   }
 
   .section3 {
@@ -1289,6 +1303,35 @@ body {
     z-index: 10;
   }
 
+  .row {
+    order: 4;
+    display:flex;
+    position: absolute;    
+    right: 10px;
+    bottom: 80px;
+    background-color: #333;
+    width: 450px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  
+  .column {
+    flex: content;
+    padding: 10px;
+    
+  }
+  
+  .row h3 {
+    font-size: 16px;
+    margin: 6px;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  
+  .row p {
+    margin-bottom: 0;
+    margin: 6px;
+  }
 
   .section1 {
     position: relative;
@@ -1303,7 +1346,7 @@ body {
     order: 2;
     width: 35%;
     right: 20px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     text-align: right;
     
@@ -1332,7 +1375,7 @@ body {
 
   .headphones1 {
     height: 100%;
-    transform: translate(-300px, 0);
+    transform: translate(-380px, 0);
   }
 
  
@@ -1443,11 +1486,11 @@ body {
   .buttonShopAll {
     height: 100%;
     width: 300px;
-    border: white solid 3px;
+    
     border-radius: 10px;
     background-color: #333;
     color: white;
-    font-size: 2vw;
+    font-size: 16px;
   }
 
   .whyus {
@@ -1458,7 +1501,7 @@ body {
     padding-top: 10px;
     font-size: 36px;
     margin-top: 50px;
-    border-top: rgb(253, 77, 46) solid 4px ;
+    
   }
 
   .section3 {
@@ -1662,7 +1705,7 @@ body {
     order: 2;
     width: 35%;
     right: 20px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     text-align: right;
     
@@ -1694,7 +1737,51 @@ body {
     transform: translate(-330px, 0);
   }
 
- 
+  .colorbar {
+    order: 3;
+    background-color: rgb(150, 150, 150); 
+    color: black;
+    font-weight: 700; 
+    position: absolute; 
+    right: 30px;
+    top: 45%;  
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  .row {
+    order: 4;
+    display:flex;
+    position: absolute;    
+    right: 10px;
+    bottom: 154px;
+    background-color: #333;
+    width: 450px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  
+  .column {
+    flex: content;
+    padding: 10px;
+    
+  }
+  
+  .row h3 {
+    font-size: 16px;
+    margin: 6px;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  
+  .row p {
+    margin-bottom: 0;
+    margin: 6px;
+  }
 
 
   .image1 {
@@ -1807,7 +1894,7 @@ body {
     padding-top: 10px;
     font-size: 36px;
     margin-top: 80px;
-    border-top: rgb(253, 77, 46) solid 4px ;
+    
   }
 
   .section3 {
@@ -2060,6 +2147,36 @@ body {
     width: 200px;
   }
 
+  .row {
+    order: 4;
+    display:flex;
+    position: absolute;    
+    right: 200px;
+    bottom: 220px;
+    background-color: #333;
+    width: 450px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  
+  .column {
+    flex: content;
+    padding: 10px;
+    
+  }
+  
+  .row h3 {
+    font-size: 16px;
+    margin: 6px;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  
+  .row p {
+    margin-bottom: 0;
+    margin: 6px;
+  }
+
 
   .image1 {
     width: 110%;    
@@ -2172,17 +2289,20 @@ body {
     padding-top: 10px;
     font-size: 36px;
     margin-top: 80px;
-    border-top: rgb(253, 77, 46) solid 4px ;
+    
   }
 
   .buttonShopAll {
     height: 70%;
     width: 300px;
-    border: white solid 3px;
+    border-top: 4px solid #858585; /* sets the light grey top border */
+    border-left: 4px solid #6e6e6e; /* sets the light grey left border */
+    border-right: 4px solid #1b1b1b; /* sets the dark grey right border */
+    border-bottom: 4px solid #202020; /* sets the dark grey bottom border */
     border-radius: 10px;
     background-color: #333;
-    color: white;
-    font-size: 1vw;
+    color: rgb(219, 219, 219);
+    font-size: 16px;
   }
 
   .section3 {
@@ -2209,13 +2329,13 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
-    margin: 0 40px;
+    margin: 0 80px;
   }
 
   .podsection3:hover {
     cursor: pointer;
     background-color: rgb(221, 221, 221);
-    border-bottom: rgb(253, 77, 46) solid 4px ;
+    
   }
   
 
