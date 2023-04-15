@@ -361,14 +361,13 @@ body {
 
   .podsection3>article {
     position: absolute;
-    transform: translateY(260px);
+    transform: translateY(460px);
     z-index: 40;
-    opacity: 0;
+    
     transition: transform 0.5s ease-out, opacity 1s ease-out;
     background-color: white;
-    padding: 8px 20px 28px;
-    margin: 0 10px;
-    border-radius: 5px;
+    padding: 18px 20px 222px;
+    
   }
 
   .icon {
@@ -1101,7 +1100,7 @@ body {
     opacity: 1;
     transform: translateY(0%);
     border: none;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(221, 221, 221);    
   }
 
   .card:hover {
@@ -1120,17 +1119,17 @@ body {
 
   .card:hover .icon,
   .card:hover>p {
-    transform: translateY(-120px);
+    transform: translateY(-150px);
     z-index: 20;
     transition: transform 0.5s ease-out;
     transition-delay: 0.1s;
   }
 
   .card:hover>article {
-    opacity: 1;
+    
     z-index: 30;
-    transform: translateY(0px);
-    transition-delay: 0.1s;
+    transform: translateY(220px);
+    transition-delay: 0.1s;        
   }
 
   .card1:after {
@@ -1144,6 +1143,24 @@ body {
     border-radius: 10px;
     transform: translateY(100%);
     transition: transform 0.9s ease-in-out;
+  }
+
+  .card:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: white;    
+    transform: translateY(-250px);
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-out, width 0.9s ease;
+    z-index: 20;
+  }
+
+  .card:hover:before {
+    transform: translateY(-180px);
+    transition: transform 0.4s ease-in-out, border-radius 1.8s ease-in-out;
+    border-radius: 1300%;
+    width: 150%;
   }
 
   .card2:after {
@@ -1174,7 +1191,7 @@ body {
 
   .card:hover:after {
     transform: translateY(0%);
-    transition: transform 0.9s ease-in-out;
+    transition: transform 0.4s ease-in-out;
   }
 }
 
@@ -1379,93 +1396,10 @@ body {
     margin: 0 20px;
   }
 
-  .card {
-    position: relative;
-    overflow: hidden;
-    transition: opacity 0.1s ease-in-out, transform 0.9s ease-in-out;
-    opacity: 1;
-    transform: translateY(0%);
-    border: none;
-    background-color: rgb(221, 221, 221);
-  }
-
-  .card:hover {
-    cursor: pointer;
-    border: none;
-  }
-
-  .card>p {
-    transition: transform 0.9s ease-in-out;
-    z-index: 40;
-  }
-
-  .card>.icon {
-    z-index: 40;
-  }
-
-  .card:hover .icon,
-  .card:hover>p {
-    transform: translateY(-120px);
-    z-index: 20;
-    transition: transform 0.5s ease-out;
-    transition-delay: 0.1s;
-  }
-
-  .card:hover>article {
-    opacity: 1;
-    z-index: 30;
-    transform: translateY(0px);
-    transition-delay: 0.1s;
-  }
-
-  .card1:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    transform: translateY(100%);
-    transition: transform 0.9s ease-in-out;
-  }
-
-  .card2:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    transform: translateY(100%);
-    transition: transform 0.9s ease-in-out;
-  }
-
-  .card3:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    transform: translateY(100%);
-    transition: transform 0.9s ease-in-out;
-  }
-
-  .card:hover:after {
-    transform: translateY(0%);
-    transition: transform 0.9s ease-in-out;
-  }
-
-
   footer p {
     padding-left: 40px;
   }
 }
-
-
 
 @media (min-width: 1920px) {
   header {
@@ -1682,86 +1616,6 @@ body {
 
   .podsection3 {
     width: 20%;
-  }
-
-  .card {
-    position: relative;
-    overflow: hidden;
-    transition: opacity 0.1s ease-in-out, transform 0.9s ease-in-out;
-    opacity: 1;
-    transform: translateY(0%);
-    border: none;
-    background-color: rgb(221, 221, 221);
-  }
-
-  .card:hover {
-    cursor: pointer;
-    border: none;
-  }
-
-  .card>p {
-    transition: transform 0.9s ease-in-out;
-    z-index: 40;
-  }
-
-  .card>.icon {
-    z-index: 40;
-  }
-
-  .card:hover .icon,
-  .card:hover>p {
-    transform: translateY(-120px);
-    z-index: 20;
-    transition: transform 0.5s ease-out;
-    transition-delay: 0.1s;
-  }
-
-  .card:hover>article {
-    opacity: 1;
-    z-index: 30;
-    transform: translateY(0px);
-    transition-delay: 0.1s;
-  }
-
-  .card1:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    transform: translateY(100%);
-    transition: transform 0.9s ease-in-out;
-  }
-
-  .card2:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    transform: translateY(100%);
-    transition: transform 0.9s ease-in-out;
-  }
-
-  .card3:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    transform: translateY(100%);
-    transition: transform 0.9s ease-in-out;
-  }
-
-  .card:hover:after {
-    transform: translateY(0%);
-    transition: transform 0.9s ease-in-out;
   }
 
   footer p {
