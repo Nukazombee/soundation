@@ -1152,13 +1152,14 @@ body {
     height: 40%;
     background-color: white;    
     transform: translateY(-250px);
+    border-radius: 50%;
     transition: transform 0.5s ease-in-out, border-radius 0.5s ease-out, width 0.9s ease;
     z-index: 20;
   }
 
   .card:hover:before {
     transform: translateY(-180px);
-    transition: transform 0.4s ease-in-out, border-radius 1.8s ease-in-out;
+    transition: transform 0.4s ease-in-out, border-radius 1.8s ease-in-out, width 0.9s ease-in-out;
     border-radius: 1300%;
     width: 150%;
   }
