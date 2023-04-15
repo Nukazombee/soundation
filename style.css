@@ -1445,11 +1445,17 @@ body {
     position: relative;
     padding-bottom: 80px;
     margin-top: 140px;
+    background-image: url(https://uploads-ssl.webflow.com/5ebba433dfc2953143bbf74e/5ebba433dfc29522f4bbf7df_Bicycle_Night_Welcome_Particles_v1.gif);
   }
+  
 
   .wooferimg {
     height: 650px;
     transform: translate(140px, -110px);
+  }
+
+  .wooferimg:hover {
+    scale: 1.01;
   }
 
   .woofertext1 {
@@ -2484,7 +2490,7 @@ body {
     color: black;
     padding-bottom: 10px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 40px;
     font-size: 36px;
     margin-top: 80px;
     
